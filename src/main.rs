@@ -2,6 +2,7 @@
 
 // reference:
 // https://rust-lang-nursery.github.io/rust-cookbook/datetime.html
+// https://docs.rs/chrono/latest/chrono/
 use chrono::prelude::*;
 
 fn main() {
