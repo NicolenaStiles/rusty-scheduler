@@ -30,26 +30,31 @@ fn main() {
 
     // test case: game night with friends
     // these can all be static, actually
-//    let name = String::from("Apex Legends Game Night");
-//    let user = String::from("sn00z");
-//    let start_time = Utc.ymd(2021, 12, 10).and_hms(20, 30, 8);
-//    let end_time = Utc.ymd(2021, 12, 10).and_hms(22, 30, 8);
-//    let is_public : bool = true;
-//    let location = String::from("online - plague drs");
-//    let status = CalendarEvent::EventStatus::Pending;
-//    let is_recurring : bool = false;
+    //    let name = String::from("Apex Legends Game Night");
+    //    let user = String::from("sn00z");
+    //    let start_time = Utc.ymd(2021, 12, 10).and_hms(20, 30, 8);
+    //    let end_time = Utc.ymd(2021, 12, 10).and_hms(22, 30, 8);
+    //    let is_public : bool = true;
+    //    let location = String::from("online - plague drs");
+    //    let status = CalendarEvent::EventStatus::Pending;
+    //    let is_recurring : bool = false;
     // this one is a bit long, so I'll leave it seperate
-    let friends = vec!["sn00z".to_string(), "heiressevna".to_string(), "ShitBitchBear".to_string()];
+    let friends = vec![
+        "sn00z".to_string(),
+        "mimicWraith".to_string(),
+        "ShitBitchBear".to_string(),
+    ];
 
-    let mut game_night_event = CalendarEvent::Event { name : String::from("Apex Legends Game Night"),
-                                                      user : String::from("sn00z"),
-                                                      start_time : Utc.ymd(2021, 12, 10).and_hms(20, 30, 8),
-                                                      end_time : Utc.ymd(2021, 12, 10).and_hms(22, 30, 8),
-                                                      is_public : true,
-                                                      location : String::from("online - plague drs"),
-                                                      status : CalendarEvent::EventStatus::Pending,
-                                                      is_recurring : false,
-                                                      invite_list : friends
+    let mut game_night_event = CalendarEvent::Event {
+        name: String::from("RoR2 Game Night"),
+        user: String::from("sn00z"),
+        start_time: Utc.ymd(2021, 12, 10).and_hms(20, 30, 8),
+        end_time: Utc.ymd(2021, 12, 10).and_hms(22, 30, 8),
+        is_public: true,
+        location: String::from("online - plague drs"),
+        status: CalendarEvent::EventStatus::Pending,
+        is_recurring: false,
+        invite_list: friends,
     };
 
     // testing getting current datetime info
